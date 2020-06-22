@@ -1,23 +1,36 @@
 {
   "name": "react-multiselect-listbox",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+  "version": "0.0.1",
+  "description": "A multiple selection list box component for React",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facuesr/react-multiselect-listbox.git"
   },
+  "bugs": {
+    "url": "https://github.com/facuesr/react-multiselect-listbox/issues"
+  },
+  "homepage": "https://github.com/facuesr/react-multiselect-listbox#readme",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^9.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "rimraf": "^3.0.2",
+    "node-sass": "^4.14.1"
   },
   "browserslist": {
     "production": [
@@ -30,5 +43,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "dependencies": {
+    "react-beautiful-dnd": "^13.0.0",
+    "react-virtualized-auto-sizer": "^1.0.2",
+    "react-window": "^1.8.5"
+  },
+  "keywords": [
+    "multiselect",
+    "list",
+    "listBox",
+    "listMultiselect",
+    "reactMultiselect",
+    "react",
+    "box",
+    "cra",
+    "multiple",
+    "select",
+    "options"
+  ]
 }

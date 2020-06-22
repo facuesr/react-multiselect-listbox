@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  height: 25px;
+  border-bottom: 1px solid var(--mslb-border-color) !important;
+  background: transparent;
+  border: none;
+  font-size: 11px;
+  width: 100%;
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+}

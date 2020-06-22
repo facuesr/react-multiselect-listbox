@@ -1,0 +1,25 @@
+.item {
+  display: flex;
+  background: transparent;
+  cursor: pointer;
+  line-height: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--mslb-border-color);
+  > span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px 0 2px 10px;
+  }
+}
+
+.item:hover {
+  background-color: var(--mslb-item-hover-bg-color);
+  border-right: 1px solid var(--mslb-border-color);
+}
+
+.is-dragging {
+  background: var(--mslb-item-hover-bg-color);
+  border: none;
+}

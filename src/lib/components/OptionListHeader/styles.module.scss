@@ -1,0 +1,14 @@
+.search {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 24px;
+  line-height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 2px 4px;
+  min-width: 0;
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+}
