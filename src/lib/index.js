@@ -1,9 +1,9 @@
 import React, { memo, useState, useMemo, useCallback } from 'react'
 import { DragDropContext } from 'react-beautiful-dnd'
-import Button from './Button'
-import SelectedListHeader from './SelectedListHeader'
-import OptionListHeader from './OptionListHeader'
-import ListBox from './ListBox'
+import Button from './components/Button'
+import SelectedListHeader from './components/SelectedListHeader'
+import OptionListHeader from './components/OptionListHeader'
+import ListBox from './components/ListBox'
 import styles from './styles.module.scss'
 
 const MultiSelectListBox = ({

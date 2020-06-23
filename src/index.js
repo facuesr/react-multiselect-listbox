@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { render } from 'react-dom'
-import MultiSelectListBox from './lib/components/MultiSelectListBox'
+import MultiSelectListBox from 'react-multiselect-listbox'
 import './index.css'
 
 const DemoMultiSelectListBox = () => {

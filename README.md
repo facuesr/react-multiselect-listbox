@@ -2,9 +2,13 @@
 
 ## Description
 
-A multiselect list box component for <a href="https://reactjs.org/" target="_blank">React</a>. This use <a href="https://github.com/bvaughn/react-window">react-window</a> and is based on an old jquery plugin.
+A multiselect list box component for <a href="https://reactjs.org/" target="_blank">React</a>.
 
-![react-multiselect-listbox demo](demo/demo.gif)
+![react-multiselect-listbox demo](demo.gif)
+
+## Examples
+
+- Basic <a href="https://codesandbox.io/s/multi-select-listbox-example-lgvdf?file=/src/App.js" target="_blank">example</a> with dnd sorting
 
 ## Installation
 
