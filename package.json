@@ -1,6 +1,6 @@
 {
   "name": "react-multiselect-listbox",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A multiple selection list box component for React",
   "main": "dist/index.js",
   "files": [
@@ -15,7 +15,6 @@
   "bugs": {
     "url": "https://github.com/facuesr/react-multiselect-listbox/issues"
   },
-  "homepage": "https://github.com/facuesr/react-multiselect-listbox#readme",
   "scripts": {
     "start": "react-scripts start",
     "build-examples": "react-scripts build",
@@ -53,18 +52,21 @@
     "@babel/runtime": "^7.10.3"
   },
   "keywords": [
-    "multiselect",
-    "list",
-    "listBox",
-    "listMultiselect",
-    "reactMultiselect",
+    "react-multiselect-listbox",
+    "listbox",
+    "multiselect-listbox",
+    "select-listbox",
+    "draggable",
+    "sortable",
+    "react multiselect",
+    "dual list",
+    "multiselect box",
+    "select box",
     "react",
     "box",
     "cra",
-    "multiple",
-    "select",
-    "options",
-    "multiselectbox",
-    "multiselectlistbox"
+    "react-beautiful-dnd",
+    "react-window",
+    "virtualized"
   ]
 }

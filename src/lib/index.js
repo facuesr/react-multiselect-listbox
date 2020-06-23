@@ -1,5 +1,6 @@
 import React, { memo, useState, useMemo, useCallback } from 'react'
 import { DragDropContext } from 'react-beautiful-dnd'
+import { defaultStrings } from './defaults'
 import Button from './components/Button'
 import SelectedListHeader from './components/SelectedListHeader'
 import OptionListHeader from './components/OptionListHeader'
@@ -7,7 +8,7 @@ import ListBox from './components/ListBox'
 import styles from './styles.module.scss'
 
 const MultiSelectListBox = ({
-  overrideStrings,
+  overrideStrings = defaultStrings,
   boxHeight = 175,
   rowHeight = 25,
   textField = 'text',
