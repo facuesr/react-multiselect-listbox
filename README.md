@@ -44,6 +44,7 @@ import MultiSelectListBox from 'react-multiselect-listbox'
   onRemoveAll={() => setSelectedTwo([])}
   sortable={true}
   onSort={({ sortedList }) => {}}
+  onSearch={(items ,textField, query) => []}
 />
 ```
 

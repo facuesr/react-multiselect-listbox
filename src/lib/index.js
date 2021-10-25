@@ -20,18 +20,22 @@ const MultiSelectListBox = ({
   onRemove,
   onSelectAll,
   onRemoveAll,
-  onSort
+  onSort,
+  onSearch
 }) => {
   const { search, selectAll, removeAll, selectedInfo } = overrideStrings
   const [query, setQuery] = useState('')
 
-  const availableOptions = useMemo(
-    () =>
-      options
-        .filter(item => !value.includes(item[valueField]))
-        .filter(item => item[textField].includes(query)),
-    [options, query, textField, value, valueField]
-  )
+  const availableOptions = useMemo(() => {
+    const items = options.filter((item) => !value.includes(item[valueField]));
+    return onSearch
+      ? onSearch({
+          items,
+          query,
+          textField,
+        })
+      : items.filter((item) => item[textField].includes(query));
+  }, [options, query, textField, value, valueField, onSearch]);
 
   const selectedOptions = useMemo(
     () =>
