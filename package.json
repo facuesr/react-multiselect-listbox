@@ -1,6 +1,6 @@
 {
   "name": "react-multiselect-listbox",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "A multiple selection list box component for React",
   "main": "dist/index.js",
   "files": [
