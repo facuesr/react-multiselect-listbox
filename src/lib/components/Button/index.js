@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 const Button = ({ children, onClick, type = '' }) => {
   return (
-    <button className={[styles.root, styles[type]].join(' ')} onClick={onClick}>
+    <button className={[styles.root, styles[type]].join(' ')} type='button' onClick={onClick}>
       {children}
     </button>
   )
